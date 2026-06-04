@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pm-model"
+dynamic = ["version"]
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "jinhyukchoi", email = "jchoi@bnl.gov"}]
+keywords = ['nbdev']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/jinhyukchoi/pm-model"
+Documentation = "https://jinhyukchoi.github.io/pm-model/"
+
+[project.entry-points.nbdev]
+pm_model = "pm_model._modidx:d"
+
+[tool.setuptools.dynamic]
+version = {attr = "pm_model.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["pm_model"]
+
+[tool.nbdev]

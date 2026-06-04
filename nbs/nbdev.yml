@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "pm-model"
+  site-url: "https://jinhyukchoi.github.io/pm-model"
+  description: ""
+  repo-branch: main
+  repo-url: "https://github.com/jinhyukchoi/pm-model"
